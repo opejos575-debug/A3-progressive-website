@@ -1,0 +1,774 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #1a5f7a;
+    --secondary: #57cc99;
+    --accent: #ff9a3c;
+    --light: #f8f9fa;
+    --dark: #2d3436;
+    --gray: #6c757d;
+    --border: #eaecf0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+    color: var(--dark);
+    overflow-x: hidden;
+}/* =========================================================
+   SECONDARY ACADEMICS
+========================================================= */
+
+.secondary-academics-section {
+    position: relative;
+
+    padding: 110px 0;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 5% 5%,
+            rgba(87,204,153,0.14),
+            transparent 22%
+        ),
+        radial-gradient(
+            circle at 95% 10%,
+            rgba(132,94,194,0.14),
+            transparent 23%
+        ),
+        radial-gradient(
+            circle at 85% 90%,
+            rgba(255,154,60,0.13),
+            transparent 25%
+        ),
+        linear-gradient(
+            135deg,
+            #f1fbff,
+            #ffffff,
+            #f4fff8
+        );
+}
+
+
+/* =========================================================
+   MAIN HEADING
+========================================================= */
+
+.secondary-main-heading {
+    max-width: 780px;
+
+    margin: 0 auto 70px;
+
+    text-align: center;
+}
+
+
+.secondary-main-heading > span {
+    display: inline-block;
+
+    padding: 8px 18px;
+
+    border-radius: 50px;
+
+    background: rgba(26,95,122,0.10);
+
+    color: #1a5f7a;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+
+.secondary-main-heading h2 {
+    margin: 14px 0;
+
+    font-size: 43px;
+
+    font-weight: 900;
+
+    color: #2d3436;
+}
+
+
+.secondary-main-heading p {
+    color: #6c757d;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   SCHOOL LEVEL HEADING
+========================================================= */
+
+.school-level-heading {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin: 65px 0 30px;
+
+    padding: 20px 25px;
+
+    border-radius: 18px;
+
+    background: #ffffff;
+
+    border: 1px solid #e8eef1;
+
+    box-shadow:
+        0 8px 22px rgba(0,0,0,0.05);
+}
+
+
+.level-heading-icon {
+    width: 60px;
+    height: 60px;
+
+    min-width: 60px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 16px;
+
+    color: #ffffff;
+
+    font-size: 22px;
+}
+
+
+.jss-heading-icon {
+    background: linear-gradient(
+        135deg,
+        #1a5f7a,
+        #57cc99
+    );
+}
+
+
+.sss-heading-icon {
+    background: linear-gradient(
+        135deg,
+        #845ec2,
+        #5f27cd
+    );
+}
+
+
+.school-level-heading span {
+    display: block;
+
+    color: #8a959b;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+
+.school-level-heading h3 {
+    color: #2d3436;
+
+    font-size: 25px;
+
+    margin-top: 3px;
+}
+
+
+/* =========================================================
+   CATEGORY HEADINGS
+========================================================= */
+
+.category-heading {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin: 48px 0 25px;
+}
+
+
+.category-heading i {
+    color: #57cc99;
+
+    font-size: 20px;
+}
+
+
+.category-heading h3 {
+    color: #1a5f7a;
+
+    font-size: 23px;
+}
+
+
+.science-heading i {
+    color: #00b894;
+}
+
+
+.humanities-heading i {
+    color: #845ec2;
+}
+
+
+.business-heading i {
+    color: #ff9a3c;
+}
+
+
+/* =========================================================
+   SUBJECT GRID
+========================================================= */
+
+.secondary-subject-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 22px;
+}
+
+
+.secondary-subject-card {
+    position: relative;
+
+    padding: 28px 20px;
+
+    min-height: 190px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background: rgba(255,255,255,0.97);
+
+    border: 1px solid #e8eef1;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 25px rgba(26,95,122,0.06);
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+
+.secondary-subject-card:hover {
+    transform: translateY(-9px);
+
+    box-shadow:
+        0 20px 40px rgba(26,95,122,0.13);
+}
+
+
+/* Top line */
+
+.secondary-subject-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 20%;
+
+    width: 60%;
+    height: 4px;
+
+    border-radius: 0 0 10px 10px;
+
+    background: linear-gradient(
+        90deg,
+        #1a5f7a,
+        #57cc99,
+        #845ec2,
+        #ff9a3c
+    );
+}
+
+
+/* =========================================================
+   SUBJECT ICON
+========================================================= */
+
+.subject-icon {
+    width: 67px;
+    height: 67px;
+
+    margin-bottom: 17px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 18px;
+
+    color: #ffffff;
+
+    font-size: 23px;
+
+    box-shadow:
+        0 8px 18px rgba(0,0,0,0.10);
+
+    transition: 0.4s;
+}
+
+
+.secondary-subject-card:hover .subject-icon {
+    transform:
+        rotate(7deg)
+        scale(1.08);
+}
+
+
+/* Main colours */
+
+.subject-icon.english {
+    background: linear-gradient(135deg,#ff6b6b,#ff9a3c);
+}
+
+.subject-icon.mathematics {
+    background: linear-gradient(135deg,#168aad,#57cc99);
+}
+
+.subject-icon.science {
+    background: linear-gradient(135deg,#00b894,#57cc99);
+}
+
+.subject-icon.values {
+    background: linear-gradient(135deg,#845ec2,#5f27cd);
+}
+
+.subject-icon.history {
+    background: linear-gradient(135deg,#ff9a3c,#ff6b6b);
+}
+
+.subject-icon.digital {
+    background: linear-gradient(135deg,#1a5f7a,#168aad);
+}
+
+.subject-icon.vocational {
+    background: linear-gradient(135deg,#57cc99,#00b894);
+}
+
+.subject-icon.arts {
+    background: linear-gradient(135deg,#ff6b6b,#845ec2);
+}
+
+.subject-icon.language {
+    background: linear-gradient(135deg,#845ec2,#168aad);
+}
+
+.subject-icon.arabic {
+    background: linear-gradient(135deg,#00b894,#168aad);
+}
+
+.subject-icon.citizenship {
+    background: linear-gradient(135deg,#168aad,#57cc99);
+}
+
+.subject-icon.biology {
+    background: linear-gradient(135deg,#00b894,#57cc99);
+}
+
+.subject-icon.chemistry {
+    background: linear-gradient(135deg,#ff9a3c,#ff6b6b);
+}
+
+.subject-icon.physics {
+    background: linear-gradient(135deg,#845ec2,#5f27cd);
+}
+
+.subject-icon.agriculture {
+    background: linear-gradient(135deg,#57cc99,#00b894);
+}
+
+.subject-icon.further {
+    background: linear-gradient(135deg,#168aad,#845ec2);
+}
+
+.subject-icon.physical {
+    background: linear-gradient(135deg,#00b894,#168aad);
+}
+
+.subject-icon.health {
+    background: linear-gradient(135deg,#ff6b6b,#ff8e8e);
+}
+
+.subject-icon.food {
+    background: linear-gradient(135deg,#ff9a3c,#ffd166);
+}
+
+.subject-icon.geography {
+    background: linear-gradient(135deg,#1abc9c,#168aad);
+}
+
+.subject-icon.technical {
+    background: linear-gradient(135deg,#ff9a3c,#845ec2);
+}
+
+.subject-icon.government {
+    background: linear-gradient(135deg,#1a5f7a,#168aad);
+}
+
+.subject-icon.crs {
+    background: linear-gradient(135deg,#845ec2,#a66cff);
+}
+
+.subject-icon.islamic {
+    background: linear-gradient(135deg,#00b894,#57cc99);
+}
+
+.subject-icon.literature {
+    background: linear-gradient(135deg,#ff6b6b,#845ec2);
+}
+
+.subject-icon.visual {
+    background: linear-gradient(135deg,#ff9a3c,#ff6b6b);
+}
+
+.subject-icon.music {
+    background: linear-gradient(135deg,#845ec2,#5f27cd);
+}
+
+.subject-icon.french {
+    background: linear-gradient(135deg,#168aad,#845ec2);
+}
+
+.subject-icon.management {
+    background: linear-gradient(135deg,#ff9a3c,#ff6b6b);
+}
+
+.subject-icon.catering {
+    background: linear-gradient(135deg,#00b894,#57cc99);
+}
+
+.subject-icon.accounting {
+    background: linear-gradient(135deg,#168aad,#57cc99);
+}
+
+.subject-icon.commerce {
+    background: linear-gradient(135deg,#ff9a3c,#ff6b6b);
+}
+
+.subject-icon.marketing {
+    background: linear-gradient(135deg,#845ec2,#ff6b6b);
+}
+
+.subject-icon.economics {
+    background: linear-gradient(135deg,#00b894,#168aad);
+}
+
+
+/* =========================================================
+   TEXT
+========================================================= */
+
+.secondary-subject-card h4 {
+    color: #2d3436;
+
+    font-size: 17px;
+
+    font-weight: 800;
+
+    line-height: 1.4;
+
+    margin: 0;
+}
+
+
+.secondary-subject-card p {
+    color: #6c757d;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+
+    margin-top: 8px;
+}
+
+
+/* =========================================================
+   SUBJECT TAG
+========================================================= */
+
+.subject-tag {
+    margin-top: 12px;
+
+    padding: 5px 10px;
+
+    border-radius: 50px;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+.core-tag {
+    background: rgba(22,138,173,0.10);
+    color: #168aad;
+}
+
+
+/* =========================================================
+   TRADE SECTION
+========================================================= */
+
+.trade-section {
+    margin-top: 85px;
+
+    padding: 55px;
+
+    border-radius: 28px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #123f52,
+            #1a5f7a,
+            #168aad,
+            #57cc99
+        );
+
+    color: #ffffff;
+
+    box-shadow:
+        0 22px 50px rgba(26,95,122,0.20);
+}
+
+
+.trade-heading {
+    text-align: center;
+
+    max-width: 700px;
+
+    margin: 0 auto 40px;
+}
+
+
+.trade-heading span {
+    color: #ffe082;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 2.5px;
+}
+
+
+.trade-heading h3 {
+    color: #ffffff;
+
+    font-size: 33px;
+
+    margin: 7px 0;
+}
+
+
+.trade-heading p {
+    color: rgba(255,255,255,0.78);
+
+    font-size: 14px;
+}
+
+
+/* Trade grid */
+
+.trade-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 18px;
+}
+
+
+/* Trade card */
+
+.trade-card {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 20px;
+
+    border-radius: 16px;
+
+    background: rgba(255,255,255,0.11);
+
+    border: 1px solid rgba(255,255,255,0.12);
+
+    transition: 0.3s;
+}
+
+
+.trade-card:hover {
+    background: rgba(255,255,255,0.20);
+
+    transform: translateY(-5px);
+}
+
+
+/* Trade icon */
+
+.trade-icon {
+    width: 58px;
+    height: 58px;
+
+    min-width: 58px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    color: #ffffff;
+
+    font-size: 21px;
+}
+
+
+.trade-icon.solar {
+    background: linear-gradient(135deg,#ff9a3c,#ffd166);
+}
+
+.trade-icon.fashion {
+    background: linear-gradient(135deg,#ff6b6b,#845ec2);
+}
+
+.trade-icon.livestock {
+    background: linear-gradient(135deg,#00b894,#57cc99);
+}
+
+.trade-icon.beauty {
+    background: linear-gradient(135deg,#ff6b6b,#ff9a3c);
+}
+
+.trade-icon.computer {
+    background: linear-gradient(135deg,#1a5f7a,#845ec2);
+}
+
+.trade-icon.horticulture {
+    background: linear-gradient(135deg,#00b894,#168aad);
+}
+
+
+.trade-card span {
+    display: block;
+
+    color: #ffe082;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 4px;
+}
+
+
+.trade-card h4 {
+    color: #ffffff;
+
+    font-size: 15px;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1050px) {
+
+    .secondary-subject-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    .secondary-subject-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .trade-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .trade-section {
+        padding: 35px 25px;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .secondary-academics-section {
+        padding: 75px 0;
+    }
+
+    .secondary-main-heading h2 {
+        font-size: 31px;
+    }
+
+    .secondary-subject-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .school-level-heading {
+        padding: 16px;
+    }
+
+    .school-level-heading h3 {
+        font-size: 20px;
+    }
+
+    .trade-heading h3 {
+        font-size: 27px;
+    }
+
+}

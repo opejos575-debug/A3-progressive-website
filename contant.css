@@ -1,0 +1,565 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #1a5f7a;
+    --secondary: #57cc99;
+    --accent: #ff9a3c;
+    --light: #f8f9fa;
+    --dark: #2d3436;
+    --gray: #6c757d;
+    --border: #eaecf0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+    color: var(--dark);
+    overflow-x: hidden;
+}
+/* =========================================================
+   APPLY SECTION SCHOOL LOGO
+========================================================= */
+
+.apply-section-logo {
+    width: 180px;
+    height: 180px;
+
+    margin: 0 auto 25px;
+
+    padding: 7px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        135deg,
+        #ff9a3c,
+        #57cc99,
+        #845ec2
+    );
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.20);
+}
+
+.apply-section-logo img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid #ffffff;
+}
+
+/* =========================================================
+   CONTACT US - COMPLETE COLORFUL DESIGN
+========================================================= */
+
+.contact-section {
+    padding: 100px 0;
+    background: linear-gradient(
+        135deg,
+        #dff6ff 0%,
+        #ecfff7 50%,
+        #fff0e5 100%
+    );
+}
+
+
+/* ================= SECTION TITLE ================= */
+
+.contact-section .section-title-bar {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contact-section .section-subtitle {
+    display: block;
+    color: #ff7a00;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.contact-section .section-title {
+    font-size: 40px;
+    font-weight: 800;
+
+    background: linear-gradient(
+        90deg,
+        #1a5f7a,
+        #57cc99,
+        #ff9a3c
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* ================= MAIN CONTAINER ================= */
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+}
+
+
+/* =========================================================
+   LEFT SIDE - CONTACT INFORMATION
+========================================================= */
+
+.contact-info {
+    position: relative;
+    overflow: hidden;
+
+    padding: 50px;
+
+    border-radius: 25px;
+
+    background: linear-gradient(
+        135deg,
+        #1a5f7a,
+        #168aad,
+        #57cc99
+    );
+
+    color: #ffffff;
+
+    box-shadow: 0 20px 45px rgba(26,95,122,0.25);
+}
+
+
+/* Decorative circles */
+
+.contact-info::before {
+    content: "";
+    position: absolute;
+
+    width: 200px;
+    height: 200px;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.10);
+
+    top: -80px;
+    right: -60px;
+}
+
+.contact-info::after {
+    content: "";
+    position: absolute;
+
+    width: 150px;
+    height: 150px;
+
+    border-radius: 50%;
+
+    background: rgba(255,154,60,0.20);
+
+    bottom: -60px;
+    left: -50px;
+}
+
+
+/* Heading */
+
+.contact-info h2 {
+    position: relative;
+    z-index: 2;
+
+    color: #ffffff !important;
+
+    font-size: 34px;
+    line-height: 1.25;
+
+    margin-bottom: 20px;
+}
+
+
+/* Paragraph */
+
+.contact-info > p {
+    position: relative;
+    z-index: 2;
+
+    color: rgba(255,255,255,0.90);
+
+    font-size: 15px;
+    line-height: 1.8;
+
+    margin-bottom: 35px;
+}
+
+
+/* ================= CONTACT ITEMS ================= */
+
+.contact-info .contact-item {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 18px;
+    padding: 15px;
+
+    border-radius: 14px;
+
+    background: rgba(255,255,255,0.12);
+
+    backdrop-filter: blur(6px);
+
+    transition: all 0.3s ease;
+}
+
+
+.contact-info .contact-item:hover {
+    transform: translateX(8px);
+
+    background: rgba(255,255,255,0.22);
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,0.12);
+}
+
+
+/* ================= CONTACT ICONS ================= */
+
+.contact-info .contact-icon {
+    width: 52px;
+    height: 52px;
+    min-width: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: #ff9a3c;
+
+    color: #ffffff;
+
+    font-size: 19px;
+
+    box-shadow:
+        0 8px 18px rgba(0,0,0,0.15);
+
+    transition: all 0.3s ease;
+}
+
+
+/* Different colors */
+
+.contact-info .contact-item:nth-child(3)
+.contact-icon {
+    background: #ff6b6b;
+}
+
+.contact-info .contact-item:nth-child(4)
+.contact-icon {
+    background: #845ec2;
+}
+
+.contact-info .contact-item:nth-child(5)
+.contact-icon {
+    background: #00b894;
+}
+
+
+.contact-info .contact-item:hover .contact-icon {
+    transform: rotate(8deg) scale(1.08);
+}
+
+
+/* Contact text */
+
+.contact-info .contact-item h4 {
+    color: #ffffff !important;
+
+    font-size: 16px;
+
+    margin-bottom: 3px;
+}
+
+
+.contact-info .contact-item p {
+    color: rgba(255,255,255,0.82);
+
+    font-size: 13px;
+
+    margin: 0;
+}
+
+
+/* =========================================================
+   RIGHT SIDE - FORM
+========================================================= */
+
+.contact-form-container {
+    padding: 50px;
+
+    background: rgba(255,255,255,0.95);
+
+    border-radius: 25px;
+
+    border: 2px solid rgba(87,204,153,0.18);
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,0.08);
+}
+
+
+/* Form heading */
+
+.contact-form-container h3 {
+    display: inline-block;
+
+    font-size: 29px;
+    font-weight: 800;
+
+    background: linear-gradient(
+        90deg,
+        #1a5f7a,
+        #57cc99,
+        #ff9a3c
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin-bottom: 30px;
+
+    position: relative;
+}
+
+
+/* Colorful line */
+
+.contact-form-container h3::after {
+    content: "";
+
+    display: block;
+
+    width: 70px;
+    height: 4px;
+
+    margin-top: 8px;
+
+    border-radius: 10px;
+
+    background: linear-gradient(
+        90deg,
+        #1a5f7a,
+        #57cc99,
+        #ff9a3c
+    );
+}
+
+
+/* ================= FORM ================= */
+
+.contact-form .form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+
+.contact-form .form-group label {
+    display: block;
+
+    color: #1a5f7a;
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    margin-bottom: 8px;
+}
+
+
+/* Inputs */
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+
+    padding: 14px 16px;
+
+    border: 2px solid #e4edf1;
+
+    border-radius: 10px;
+
+    background: #fbfdff;
+
+    color: #2d3436;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition: all 0.3s ease;
+}
+
+
+.contact-form input {
+    height: 52px;
+}
+
+
+.contact-form textarea {
+    min-height: 150px;
+
+    resize: vertical;
+}
+
+
+/* Focus */
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #57cc99;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 0 0 4px rgba(87,204,153,0.14);
+}
+
+
+/* Placeholder */
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #a0a9ae;
+}
+
+
+/* =========================================================
+   SEND MESSAGE BUTTON
+========================================================= */
+
+.send-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 15px 30px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: linear-gradient(
+        135deg,
+        #1a5f7a,
+        #57cc99
+    );
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+    box-shadow:
+        0 8px 20px rgba(26,95,122,0.20);
+}
+
+
+.send-btn:hover {
+    transform: translateY(-4px);
+
+    background: linear-gradient(
+        135deg,
+        #ff9a3c,
+        #ff6b6b
+    );
+
+    box-shadow:
+        0 12px 25px rgba(255,107,107,0.25);
+}
+
+
+.send-btn i {
+    transition: all 0.3s ease;
+}
+
+
+.send-btn:hover i {
+    transform: translateX(6px) rotate(-10deg);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .contact-section {
+        padding: 70px 0;
+    }
+
+    .contact-section .section-title {
+        font-size: 30px;
+    }
+
+    .contact-info,
+    .contact-form-container {
+        padding: 30px 20px;
+    }
+
+    .contact-info h2 {
+        font-size: 27px;
+    }
+
+    .contact-form .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .send-btn {
+        width: 100%;
+    }
+
+}

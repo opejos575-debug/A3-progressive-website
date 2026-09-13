@@ -1,0 +1,586 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #1a5f7a;
+    --secondary: #57cc99;
+    --accent: #ff9a3c;
+    --light: #f8f9fa;
+    --dark: #2d3436;
+    --gray: #6c757d;
+    --border: #eaecf0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+    color: var(--dark);
+    overflow-x: hidden;
+}
+
+.apply-section-logo {
+      width: 180px;
+    height: 180px;
+
+    padding: 5px;
+
+    border-radius: 50%;
+    overflow: hidden;
+
+    margin: 0 auto 25px;
+
+    background: linear-gradient(
+        135deg,
+        #1a5f7a,
+        #57cc99,
+        #ff9a3c,
+        #845ec2
+    );
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.20);
+}
+
+.apply-section-logo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 4px solid #fff;
+}
+
+/* =========================================================
+   COLORFUL APPLY NOW SECTION
+========================================================= */
+
+.apply-section {
+    position: relative;
+    padding: 100px 0;
+    overflow: hidden;
+
+    background:
+        radial-gradient(circle at 10% 20%, rgba(87, 204, 153, 0.20), transparent 25%),
+        radial-gradient(circle at 90% 10%, rgba(255, 154, 60, 0.20), transparent 25%),
+        radial-gradient(circle at 80% 90%, rgba(132, 94, 194, 0.15), transparent 25%),
+        linear-gradient(135deg, #e8f9ff, #effff7, #fff3e7);
+}
+
+
+/* Decorative background shapes */
+
+.apply-section::before {
+    content: "";
+    position: absolute;
+
+    width: 220px;
+    height: 220px;
+
+    border-radius: 50%;
+
+    background: rgba(87, 204, 153, 0.12);
+
+    top: -80px;
+    left: -70px;
+}
+
+.apply-section::after {
+    content: "";
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 154, 60, 0.12);
+
+    bottom: -70px;
+    right: -50px;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.apply-section .section-title-bar {
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+
+    margin-bottom: 60px;
+}
+
+.apply-section .section-subtitle {
+    display: block;
+
+    color: #ff7a00;
+
+    font-size: 14px;
+    font-weight: 800;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 10px;
+}
+
+.apply-section .section-title {
+    font-size: 42px;
+    font-weight: 800;
+
+    background: linear-gradient(90deg,
+            #1a5f7a,
+            #57cc99,
+            #845ec2,
+            #ff9a3c);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+
+.apply-wrapper {
+    position: relative;
+    z-index: 2;
+
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    gap: 35px;
+
+    align-items: stretch;
+}
+
+
+/* =========================================================
+   LEFT APPLICATION CARD
+========================================================= */
+
+.apply-content {
+    position: relative;
+    overflow: hidden;
+
+    padding: 55px;
+
+    border-radius: 28px;
+
+    background: linear-gradient(135deg,
+            #1a5f7a 0%,
+            #168aad 45%,
+            #57cc99 100%);
+
+    color: #ffffff;
+
+    box-shadow:
+        0 20px 45px rgba(26, 95, 122, 0.25);
+}
+
+
+/* Decorative circles */
+
+.apply-content::before {
+    content: "";
+
+    position: absolute;
+
+    width: 220px;
+    height: 220px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.10);
+
+    top: -90px;
+    right: -70px;
+}
+
+.apply-content::after {
+    content: "";
+
+    position: absolute;
+
+    width: 160px;
+    height: 160px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 154, 60, 0.22);
+
+    bottom: -70px;
+    left: -50px;
+}
+
+
+/* Graduation Icon */
+
+.apply-icon {
+    position: relative;
+    z-index: 2;
+
+    width: 75px;
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 20px;
+
+    background: linear-gradient(135deg,
+            #ff9a3c,
+            #ff6b6b);
+
+    color: #ffffff;
+
+    font-size: 32px;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, 0.16);
+}
+
+
+/* Heading */
+
+.apply-content h2 {
+    position: relative;
+    z-index: 2;
+
+    color: #ffffff;
+
+    font-size: 35px;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+}
+
+
+/* Paragraph */
+
+.apply-content>p {
+    position: relative;
+    z-index: 2;
+
+    color: rgba(255, 255, 255, 0.90);
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.apply-features {
+    position: relative;
+    z-index: 2;
+}
+
+
+.apply-features div {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 15px;
+
+    padding: 10px 12px;
+
+    border-radius: 10px;
+
+    color: #ffffff;
+
+    background: rgba(255, 255, 255, 0.10);
+
+    transition: 0.3s;
+}
+
+
+.apply-features div:hover {
+    background: rgba(255, 255, 255, 0.20);
+
+    transform: translateX(6px);
+}
+
+
+.apply-features i {
+    color: #ffe082;
+
+    font-size: 18px;
+}
+
+
+/* =========================================================
+   APPLICATION FORM CARD
+========================================================= */
+
+.apply-form-container {
+    background: rgba(255, 255, 255, 0.96);
+
+    padding: 50px;
+
+    border-radius: 28px;
+
+    border: 2px solid rgba(87, 204, 153, 0.20);
+
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Form heading */
+
+.apply-form-container h3 {
+    position: relative;
+
+    display: inline-block;
+
+    font-size: 30px;
+
+    font-weight: 800;
+
+    background: linear-gradient(90deg,
+            #1a5f7a,
+            #57cc99,
+            #ff9a3c);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin-bottom: 30px;
+}
+
+
+/* Underline */
+
+.apply-form-container h3::after {
+    content: "";
+
+    display: block;
+
+    width: 70px;
+    height: 4px;
+
+    margin-top: 8px;
+
+    border-radius: 10px;
+
+    background: linear-gradient(90deg,
+            #1a5f7a,
+            #57cc99,
+            #ff9a3c);
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.apply-form .form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+.apply-form .form-group {
+    margin-bottom: 20px;
+}
+
+
+.apply-form label {
+    display: block;
+
+    color: #1a5f7a;
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    margin-bottom: 8px;
+}
+
+
+/* Inputs */
+
+.apply-form input,
+.apply-form select,
+.apply-form textarea {
+    width: 100%;
+
+    padding: 14px 16px;
+
+    border: 2px solid #e4edf1;
+
+    border-radius: 10px;
+
+    background: #fafdff;
+
+    color: #2d3436;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition: all 0.3s ease;
+}
+
+
+.apply-form input,
+.apply-form select {
+    height: 52px;
+}
+
+
+.apply-form textarea {
+    min-height: 140px;
+
+    resize: vertical;
+}
+
+
+/* Input hover */
+
+.apply-form input:hover,
+.apply-form select:hover,
+.apply-form textarea:hover {
+    border-color: #b8dfe7;
+}
+
+
+/* Input focus */
+
+.apply-form input:focus,
+.apply-form select:focus,
+.apply-form textarea:focus {
+    border-color: #57cc99;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 0 0 4px rgba(87, 204, 153, 0.14);
+}
+
+
+/* =========================================================
+   SUBMIT APPLICATION BUTTON
+========================================================= */
+
+.apply-submit-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 16px 32px;
+
+    border: none;
+
+    border-radius: 11px;
+
+    background: linear-gradient(135deg,
+            #1a5f7a,
+            #57cc99);
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+    box-shadow:
+        0 10px 25px rgba(26, 95, 122, 0.20);
+}
+
+
+.apply-submit-btn:hover {
+    background: linear-gradient(135deg,
+            #ff9a3c,
+            #ff6b6b);
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 14px 30px rgba(255, 107, 107, 0.25);
+}
+
+
+.apply-submit-btn i {
+    transition: 0.3s;
+}
+
+
+.apply-submit-btn:hover i {
+    transform: translateX(6px) rotate(-10deg);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .apply-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .apply-section {
+        padding: 70px 0;
+    }
+
+    .apply-section .section-title {
+        font-size: 31px;
+    }
+
+    .apply-content,
+    .apply-form-container {
+        padding: 30px 20px;
+    }
+
+    .apply-content h2 {
+        font-size: 28px;
+    }
+
+    .apply-form .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .apply-submit-btn {
+        width: 100%;
+    }
+
+}
